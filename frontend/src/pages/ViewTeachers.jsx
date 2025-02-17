@@ -14,7 +14,7 @@ const ViewTeachers = () => {
 
   const fetchTeachers = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/teachers');
+      const response = await axios.get('https://school-project-n93b.onrender.com/api/teachers');
       if (Array.isArray(response.data.teachers)) {
         const updatedTeachers = response.data.teachers.map(teacher => ({
           ...teacher,
@@ -35,7 +35,7 @@ const ViewTeachers = () => {
 
   const deleteTeacher = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/teacher/${id}`);
+      await axios.delete(`https://school-project-n93b.onrender.com/api/teacher/${id}`);
       fetchTeachers();
     } catch (error) {
       console.error('Error deleting teacher:', error);

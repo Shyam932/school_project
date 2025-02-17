@@ -30,7 +30,7 @@ const EditTeacher = ({ onSuccess, teacherData }) => {
     try {
       setLoading(true);
       setErrorMessage(null);
-      const response = await axios.put(`http://localhost:5000/api/teachers/${teacherId}`, editData);
+      const response = await axios.put(`https://school-project-n93b.onrender.com/api/teachers/${teacherId}`, editData);
       if (!response) {
         throw new Error('Update failed.');
       }

@@ -7,7 +7,7 @@ const ViewChart = ({ classID }) => {
 
     const getStudentOfClassInfo = async () => {
         try {
-          const response = await axios.get(`http://localhost:5000/api/students?classID=${classID}`);
+          const response = await axios.get(`https://school-project-n93b.onrender.com/api/students?classID=${classID}`);
           const students = response.data.students;
           let maleCount = 0;
           let femaleCount = 0;

@@ -29,7 +29,7 @@ const AddStudent = ({ onSuccess }) => {
       setLoading(true);
       setErrorMessage(null);
 
-      const response = await axios.post('http://localhost:5000/api/students', formData);
+      const response = await axios.post('https://school-project-n93b.onrender.com/api/students', formData);
       if (response.data.success === false) {
         return setErrorMessage(response.data.message);
       }

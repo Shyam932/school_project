@@ -9,7 +9,7 @@ const AddClass = ({ onSuccess }) => {
     studentFees: ''
   });
 
-  //  <button className='view-button' onClick={() => navigate(`/class/${cls._id}`)}>View Class</button>
+ 
 
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState(null);
@@ -27,7 +27,7 @@ const AddClass = ({ onSuccess }) => {
     try {
       setLoading(true);
       setErrorMessage(null);
-      const response = await axios.post('http://localhost:5000/api/classes', formData);
+      const response = await axios.post('https://school-project-n93b.onrender.com/api/classes', formData);
       if (response.data.success === false) {
         return setErrorMessage(response.data.message);
       }

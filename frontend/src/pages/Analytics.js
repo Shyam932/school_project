@@ -10,7 +10,7 @@ const Analytics = () => {
 
     const fetchAnalytics = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/api/analytics/financial', {
+            const response = await axios.get('https://school-project-n93b.onrender.com/api/analytics/financial', {
                 params: { type, month, year }
             });
             setData(response.data);

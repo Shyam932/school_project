@@ -18,7 +18,7 @@ const ViewClasses = () => {
 
   const fetchClasses = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/classes');
+      const response = await axios.get('https://school-project-n93b.onrender.com/api/classes');
       if (Array.isArray(response.data.classes)) {
         const updatedClasses = response.data.classes.map(cls => ({
           ...cls,
@@ -44,7 +44,7 @@ const ViewClasses = () => {
 
   const deleteClass = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/classes/${id}`);
+      await axios.delete(`https://school-project-n93b.onrender.com/api/classes/${id}`);
       fetchClasses();
     } catch (error) {
       console.error('Error deleting class:', error);
@@ -54,7 +54,7 @@ const ViewClasses = () => {
 
   const viewClassDetails = async (id) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/classes/${id}/details`);
+      const response = await axios.get(`https://school-project-n93b.onrender.com/api/classes/${id}/details`);
       const data = response.data;
   
       // Ensure `students` and `teachers` fields are always arrays

@@ -34,7 +34,7 @@ const EditClass = ({ onSuccess, classData }) => {
     try {
       setLoading(true);
       setErrorMessage(null);
-      const response = await axios.put(`http://localhost:5000/api/classes/${classId}`, editData);
+      const response = await axios.put(`https://school-project-n93b.onrender.com/api/classes/${classId}`, editData);
       
       if (!response) {
         return;
