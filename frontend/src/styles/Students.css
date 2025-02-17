@@ -1,0 +1,60 @@
+.student-container {
+  padding: 20px;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fef08a; /* Matching the class page background */
+}
+
+.add-button, .cancel-button, .delete-button, .edit-button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-button {
+  background-color: #ff4444;
+  color: white;
+}
+
+.edit-button {
+  background-color: #008CBA;
+  color: white;
+}
+
+.student-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.student-card {
+  background-color: #FFEE99; /* Yellow background */
+  border: 1px solid #ddd;
+  padding: 24px;
+  margin: 16px;
+  width: 300px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.student-card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}

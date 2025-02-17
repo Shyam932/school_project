@@ -1,0 +1,122 @@
+/* Class.css */
+
+.classes-container {
+    padding: 16px;
+  }
+  
+  .add-button {
+    background-color: #facc15;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 16px 16px 16px 0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .cancel-button {
+    background-color: #f87171;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .class-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .class-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 16px;
+    padding: 24px;
+    background-color: #fef08a;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .delete-button {
+    background-color: #ef4444;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  
+  .edit-button {
+    background-color: #3b82f6;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .class-details-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+  }
+  
+  .class-details-modal h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .class-details-modal h4 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #555;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  .class-details-modal ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .class-details-modal ul li {
+    font-size: 1rem;
+    padding: 8px;
+    background: #f8f8f8;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .class-details-modal button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .class-details-modal button:hover {
+    background-color: #cc0000;
+  }
+  
+  

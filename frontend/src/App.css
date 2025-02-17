@@ -1,0 +1,81 @@
+/* App.css */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.nav-button {
+  flex: 1;
+  color: white;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 8px solid;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.home {
+  background-color:green;
+  border-color: #289a53;
+}
+
+.home:hover {
+  background-color: #14532d;
+  border-color: #0f3d22;
+}
+
+.teacher {
+  background-color:green;
+  border-color: #289a53;
+}
+
+.teacher:hover {
+  background-color: #14532d;
+  border-color: #0f3d22;
+}
+
+.student {
+  background-color: green;
+  border-color: #289a53;
+}
+
+.student:hover {
+  background-color: #14532d;
+  border-color: #0f3d22;
+}
+
+.classes {
+  background-color: green;
+  border-color: #289a53;
+}
+
+.classes:hover {
+  background-color: #14532d;
+  border-color: #0f3d22;
+}
+
+.analytics {
+  background-color: green;
+  border-color: #289a53;
+}
+
+.analytics:hover {
+  background-color: #14532d;
+  border-color: #0f3d22;
+}
